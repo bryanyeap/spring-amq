@@ -46,6 +46,14 @@
             <artifactId>lettuce-core</artifactId>
             <version>5.1.8.RELEASE</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-kahadb-store -->
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-kahadb-store</artifactId>
+            <version>5.15.9</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
