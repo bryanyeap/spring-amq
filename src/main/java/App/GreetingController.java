@@ -16,7 +16,7 @@ public class GreetingController {
     private static String queue = "greeting_queue";
 
     public void sendToQueue(String greetingMsg) throws JMSException {
-        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
+        ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("useraVk", "jFxwmHup", url);
         Connection connection = connectionFactory.createConnection();
         connection.start();
 
