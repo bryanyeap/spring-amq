@@ -34,9 +34,10 @@ public class GreetingController {
     }
 
     @PostMapping(path="/PostMsg", consumes="application/json", produces="application/json")
-    public void postGreeting(@RequestBody Greetings greeting) {
+    public void postGreeting(@RequestBody Greetings greeting) throws JMSException {
 
         System.out.println("Received greeting: " + greeting.toString());
+        sendToQueue(greeting.toString());
 
     }
 }
