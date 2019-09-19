@@ -12,7 +12,7 @@ import javax.jms.*;
 @RequestMapping(path="/GreetingMsg")
 public class GreetingController {
 
-    private static String url = "http://broker-amq-tcp-spring-amq-redis-hello.apps.mta-eam-eval.rhmi.io/";
+    private static String url = "tcp://broker-amq-5-r6s2k:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600";
     private static String queue = "greeting_queue";
 
     public void sendToQueue(String greetingMsg) throws JMSException {
@@ -35,7 +35,6 @@ public class GreetingController {
 
     @PostMapping(path="/PostMsg", consumes="application/json", produces="application/json")
     public void postGreeting(@RequestBody Greetings greeting) throws JMSException {
-
         System.out.println("Received greeting: " + greeting.toString());
         sendToQueue(greeting.toString());
 
