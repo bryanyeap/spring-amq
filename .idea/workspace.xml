@@ -4,6 +4,7 @@
     <list default="true" id="6a927768-d612-4858-b1b9-b2fe21a2ae2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/App/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App/GreetingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App/GreetingReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App/GreetingReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App/SpringBootApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App/SpringBootApp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,20 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/App/GreetingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/App/GreetingReceiver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            <state relative-caret-position="205">
+              <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,10 +62,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/App/GreetingReceiver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/App/SpringBootApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+            <state relative-caret-position="255">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,12 +103,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/App/Greetings.java" />
         <option value="$PROJECT_DIR$/src/main/java/WebApp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/App/SpringBootApp.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/App/messageReceiver.java" />
         <option value="$PROJECT_DIR$/src/main/java/App/StartUps.java" />
         <option value="$PROJECT_DIR$/src/main/java/App/GreetingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/App/GreetingReceiver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/App/SpringBootApp.java" />
       </list>
     </option>
   </component>
@@ -196,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GreetingReceiver">
+  <component name="RunManager" selected="Application.SpringBootApp">
     <configuration name="GreetingReceiver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App.GreetingReceiver" />
       <module name="Spring-App" />
@@ -225,8 +226,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GreetingReceiver" />
         <item itemvalue="Application.SpringBootApp" />
+        <item itemvalue="Application.GreetingReceiver" />
       </list>
     </recent_temporary>
   </component>
@@ -294,16 +295,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App/SpringBootApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/App/StartUps.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -335,8 +326,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/App/GreetingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        <state relative-caret-position="205">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -345,8 +336,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/App/GreetingReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App/SpringBootApp.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
