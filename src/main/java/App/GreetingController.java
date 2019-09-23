@@ -37,6 +37,5 @@ public class GreetingController {
     public void postGreeting(@RequestBody Greetings greeting) throws JMSException {
         System.out.println("Received greeting: " + greeting.toString());
         sendToQueue(greeting.toString());
-
     }
 }

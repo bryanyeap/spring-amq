@@ -9,7 +9,7 @@ public class GreetingReceiver {
     private static String url = "tcp://broker-amq-tcp:61616";
     private static String subject = "greeting_queue";
 
-    public static void main(String[] args) throws JMSException {
+    public void receiveMsg() throws JMSException {
         ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory();
         connectionFactory.setBrokerURL(url);
         connectionFactory.setUserName("useraVk");
@@ -21,7 +21,28 @@ public class GreetingReceiver {
         Destination destination = session.createQueue("greeting_queue");
         MessageConsumer consumer = session.createConsumer(destination);
         consumer.setMessageListener(new messageReceiver());
+    }
 
-        connection.close();
+    private static class messageReceiver implements MessageListener {
+        @Override
+        public void onMessage(Message message) {
+            TextMessage textMsg = (TextMessage) message;
+            try {
+                System.out.println("Consumed message: " + textMsg.getText());
+            }
+            catch(JMSException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            GreetingReceiver greetingReceiver = new GreetingReceiver();
+            greetingReceiver.receiveMsg();
+        }
+        catch (JMSException e) {
+            e.printStackTrace();
+        }
     }
 }
