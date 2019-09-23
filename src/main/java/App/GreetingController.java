@@ -13,13 +13,13 @@ import javax.jms.*;
 @RequestMapping(path="/GreetingMsg")
 public class GreetingController {
 
-    private static String url = ActiveMQConnection.DEFAULT_BROKER_URL;
-    //private static String url = "tcp://broker-amq-tcp:61616";
+    //private static String url = ActiveMQConnection.DEFAULT_BROKER_URL;
+    private static String url = "tcp://broker-amq-tcp:61616";
     private static String queue = "greeting_queue";
 
     public void sendToQueue(String greetingMsg) throws JMSException {
-        //ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("useraVk", "jFxwmHup", url);
-        ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
+        ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("useraVk", "jFxwmHup", url);
+        //ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
 
         Connection connection = connectionFactory.createConnection();
         connection.start();
