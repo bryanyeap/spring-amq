@@ -1,5 +1,6 @@
 package App;
 
+import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,6 +13,7 @@ import javax.jms.*;
 @RequestMapping(path="/GreetingMsg")
 public class GreetingController {
 
+    //private static String url = ActiveMQConnection.DEFAULT_BROKER_URL;
     private static String url = "tcp://broker-amq-tcp:61616";
     private static String queue = "greeting_queue";
 
