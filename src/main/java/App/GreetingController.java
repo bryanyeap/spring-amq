@@ -12,7 +12,7 @@ import javax.jms.*;
 @RequestMapping(path="/GreetingMsg")
 public class GreetingController {
 
-    private static String url = "vm://broker-amq-5-r6s2k";
+    private static String url = "tcp://broker-amq-tcp:61616";
     private static String queue = "greeting_queue";
 
     public void sendToQueue(String greetingMsg) throws JMSException {
